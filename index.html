@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurfExplore</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+       
+}
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg fixed w-full z-30 top-0">
+        <div class="container mx-auto px-2 py-4 flex justify-between items-center">
+            <a href="#" class="inline-block rounded-lg p-1 hover:bg-blue-50 transition duration-300">
+  <img src="logo.png" alt="Surf & Explore Logo" style="height: 80px;">
+</a>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Home</a>
+                <a href="#surf-lessons" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Surf Lessons</a>
+                <a href="#tourist-guide" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Tourist Guide</a>
+                <a href="#about-us" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">About Us</a>
+               
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 shadow-inner">
+            <a href="#home" class="block px-6 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300">Home</a>
+            <a href="#surf-lessons" class="block px-6 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300">Surf Lessons</a>
+            <a href="#tourist-guide" class="block px-6 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300">Tourist Guide</a>
+            <a href="#about-us" class="block px-6 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300">About Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center text-white" style="background-image: url('1000000436.jpg'); padding-top: 80px;">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 animate-fade-in-up">Ride the Waves, Explore Agadir</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in-up delay-200">Your ultimate partner for unforgettable surf adventures, authentic local tours, and premium equipment rentals in Agadir, Morocco.</p>
+            <div class="space-y-4 sm:space-y-0 sm:space-x-6 flex flex-col sm:flex-row justify-center animate-fade-in-up delay-400">
+                <a href="#surf-lessons" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">Book Surf Lessons</a>
+                <a href="#tourist-guide" class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">Discover Tours</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Surf Lessons Section -->
+    <section id="surf-lessons" class="py-16 bg-gradient-to-br from-blue-50 to-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-blue-800 mb-12">Surf Lessons for All Levels</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Lesson Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                    <img src="PMG_2312.JPG" alt="Beginner Surf Lesson" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-3">Beginner Lessons</h3>
+                        <p class="text-gray-600 mb-4">Learn the basics of surfing, from paddling to standing up on your first waves. Safe, fun, and tailored for absolute beginners.</p>
+                        <ul class="list-disc list-inside text-gray-500 mb-4">
+                            <li>Certified ISA Instructors</li>
+                            <li>Small Group Sizes (Max 4)</li>
+                            <li>All Equipment Included</li>
+                        </ul>
+                        <a href="https://wa.me/+212645084066?text=Hello!%20I'm%20interested%20in%20booking%20Intermediate%20Surf%20Coaching." target="_blank" class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-700 transition">BBOK NOW</a>
+                    </div>
+                </div>
+                <!-- Lesson Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                    <img src="PMG_2305.JPG" alt="Intermediate Surf Lesson" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-3">Intermediate Coaching</h3>
+                        <p class="text-gray-600 mb-4">Refine your technique, learn to read waves, and improve your turns. Take your surfing to the next level with personalized feedback.</p>
+                        <ul class="list-disc list-inside text-gray-500 mb-4">
+                            <li>Advanced Wave Reading</li>
+                            <li>Technique Correction</li>
+                            <li>Video Analysis Available</li>
+                        </ul>
+                        <a href="https://wa.me/+212645084066?text=Hello!%20I'm%20interested%20in%20booking%20Intermediate%20Surf%20Coaching." target="_blank" class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-700 transition">BBOK NOW</a>
+                    </div>
+                </div>
+                <!-- Lesson Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                    <img src="1000005759.jpg" alt="Private Surf Lesson" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-3">Private Lessons</h3>
+                        <p class="text-gray-600 mb-4">One-on-one instruction tailored precisely to your needs and goals. Fast-track your progress with dedicated attention.</p>
+                        <ul class="list-disc list-inside text-gray-500 mb-4">
+                            <li>Personalized Curriculum</li>
+                            <li>Flexible Scheduling</li>
+                            <li>Rapid Skill Development</li>
+                        </ul>
+                        <a href="https://wa.me/+212645084066?text=Hello!%20I'm%20interested%20in%20booking%20Intermediate%20Surf%20Coaching." target="_blank" class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-700 transition">BBOK NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tourist Guide Section -->
+    <section id="tourist-guide" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-blue-800 mb-12">Explore Agadir with Local Experts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Tour Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                    <img src="Corniche-1.webp" alt="Souk El Had Tour" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-3">Agadir City & Souk Tour</h3>
+                        <p class="text-gray-600 mb-4">Discover the vibrant heart of Agadir, from its bustling Souk El Had to the panoramic views of the Kasbah.</p>
+                        <ul class="list-disc list-inside text-gray-500 mb-4">
+                            <li>Local Market Experience</li>
+                            <li>Historical Sites</li>
+                            <li>Authentic Moroccan Culture</li>
+                        </ul>
+                        <a href="tour-details.html" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                            View Details
+                        </a>
+                
+                    </div>
+                </div>
+                <!-- Tour Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                    <img src="caption.jpg" alt="Paradise Valley Tour" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-3">Paradise Valley Excursion</h3>
+                        <p class="text-gray-600 mb-4">Escape to the serene oasis of Paradise Valley. Enjoy natural pools, stunning landscapes, and a refreshing swim.</p>
+                        <ul class="list-disc list-inside text-gray-500 mb-4">
+                            <li>Scenic Drive</li>
+                            <li>Natural Waterfalls & Pools</li>
+                            <li>Relaxing Nature Walk</li>
+                        </ul>
+                        <a href="tour-details-1.html" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+                <!-- Tour Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                    <img src="thumb_er.jpg" alt="Timlalin Dunes & Sunset Experience & sand bording" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-3">Timlalin Dunes & Sunset Experience & sand bording</h3>
+                        <p class="text-gray-600 mb-4">Discover the magic of Timlalin Dunes with sandboarding fun and a stunning sunset over the Atlantic — the perfect mix of thrill and natural beauty.</p>
+                        <ul class="list-disc list-inside text-gray-500 mb-4">
+                            <li>Thrilling Sandboarding Fun</li>
+                            <li>Golden Dunes & Ocean Views</li>
+                            <li>Unforgettable Sunset Experience</li>
+                        </ul>
+                        <a href="tour-details-2.html" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tour Card 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                    <img src="8a.jpg" alt="Quad Ride & Camel Ride" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-3">Quad Ride & Camel Ride</h3>
+                        <p class="text-gray-600 mb-4">Embark on an exhilarating adventure that starts with an adrenaline-pumping quad ride across vast sandy terrains, then transitions into an authentic camel trek that offers a glimpse into local heritage and the serene pace of desert life.</p>
+                        <ul class="list-disc list-inside text-gray-500 mb-4">
+                            <li>Adrenaline-Powered Quad Biking</li>
+                            <li>Authentic Camel Trekking</li>
+                            <li>Cultural Connectivity</li>
+                        </ul>
+                        <a href="tour-details-3.html" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <!-- About Us Section -->
+    <section id="about-us" class="py-16 bg-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold text-blue-800 mb-6">About Surf & Explore Agadir</h2>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                    Welcome to Surf & Explore Agadir, your premier destination for an authentic Moroccan adventure! We are passionate about sharing the beauty of Agadir's waves and its rich culture with visitors from around the globe. Our team of experienced local surfers and certified guides are dedicated to providing safe, fun, and unforgettable experiences.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Whether you're looking to catch your first wave, explore hidden gems of the region, we've got you covered. We pride ourselves on personalized service, top-notch equipment, and a deep love for our community and the ocean. Join us and make memories that will last a lifetime!
+                </p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://placehold.co/600x400/48D1CC/ffffff?text=Our+Team" alt="Our Team" class="rounded-xl shadow-lg w-full h-auto object-cover">
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Surf & Explore Agadir. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-white hover:text-blue-300 transition duration-300">Privacy Policy</a>
+                <a href="#" class="text-white hover:text-blue-300 transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu after clicking a link
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Simple animation for hero section elements
+        const heroElements = document.querySelectorAll('.animate-fade-in-up');
+        heroElements.forEach((el, index) => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+                el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                el.style.opacity = 1;
+                el.style.transform = 'translateY(0)';
+            }, index * 100 + 500); // Stagger animation
+        });
+    </script>
+</body>
+</html>
